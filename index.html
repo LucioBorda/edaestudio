@@ -31,7 +31,7 @@
 <body class="bg-darkbg text-gray-100 font-sans antialiased selection:bg-accent selection:text-white">
 
     <!-- HEADER / NAVBAR -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-darkbg/80 backdrop-blur-md border-b border-gray-800">
+    <header class="fixed top-0 left-0 w-full z-50 bg-darkbg/85 backdrop-blur-md border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="text-xl font-bold tracking-wider uppercase">
                 Eda<span class="text-accent">Estudio</span>
@@ -47,24 +47,27 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION CON FOTO VERTICAL DE LOS ESTUDIOS DETRÁS -->
     <section class="pt-32 pb-20 md:pt-44 md:py-32 relative overflow-hidden flex items-center justify-center">
-        <div class="absolute inset-0 z-0 opacity-20 bg-[radial-gradient(#e11d48_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <!-- Imagen vertical de fondo con oscurecimiento para lectura perfecta -->
+        <div class="absolute inset-0 z-0 bg-cover bg-center opacity-30" style="background-image: url('hero-estudios.jpg');"></div>
+        <div class="absolute inset-0 z-0 bg-gradient-to-b from-darkbg/90 via-darkbg/70 to-darkbg"></div>
+
         <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
-            <span class="inline-block bg-accent/10 text-accent border border-accent/20 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-6">
+            <span class="inline-block bg-accent/20 text-accent border border-accent/30 text-xs font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full mb-6 backdrop-blur-sm">
                 Creá • Grabá • Crecé
             </span>
             <h1 class="text-4xl md:text-7xl font-bold tracking-tight mb-6">
                 Estudio Creativo <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-red-600">Audiovisual</span>
             </h1>
-            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
                 Potenciamos tu marca personal, podcast y redes sociales con infraestructura profesional y estrategia de contenido de alto nivel.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#estudios" class="bg-accent hover:bg-rose-700 text-white font-bold px-8 py-4 rounded-xl transition shadow-xl shadow-rose-900/20">
                     Conocé los Estudios
                 </a>
-                <a href="#servicios" class="bg-cardbg hover:bg-zinc-800 border border-gray-800 font-bold px-8 py-4 rounded-xl transition">
+                <a href="#servicios" class="bg-cardbg/80 backdrop-blur-sm hover:bg-zinc-800 border border-gray-700 font-bold px-8 py-4 rounded-xl transition">
                     Ver Servicios
                 </a>
             </div>
@@ -143,45 +146,62 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-cardbg border border-gray-800/80 p-8 rounded-2xl hover:border-accent transition">
-                    <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6 text-xl">
-                        <i class="fa-solid fa-video"></i>
+                
+                <!-- 1. ESTUDIO PARA STREAMING Y PODCAST -->
+                <div class="relative rounded-3xl overflow-hidden min-h-[350px] flex flex-col justify-end p-8 group border border-gray-800">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('estudiopodcast.jpg');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
+                    <div class="relative z-10">
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Infraestructura</span>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Estudio para Streaming y Podcast</h3>
+                        <p class="text-gray-300 text-sm">Alquiler de espacios full equipados con soporte técnico en vivo.</p>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Estudio para Streaming y Podcast</h3>
-                    <p class="text-gray-400 text-sm">Alquiler de espacios full equipados con soporte técnico en vivo.</p>
                 </div>
 
-                <div class="bg-cardbg border border-gray-800/80 p-8 rounded-2xl hover:border-accent transition">
-                    <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6 text-xl">
-                        <i class="fa-solid fa-clapperboard"></i>
+                <!-- 2. EDICIÓN DE VIDEOS Y REELS -->
+                <div class="relative rounded-3xl overflow-hidden min-h-[350px] flex flex-col justify-end p-8 group border border-gray-800">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('edicion.jpg');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
+                    <div class="relative z-10">
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Post-Producción</span>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Edición de Videos y Reels</h3>
+                        <p class="text-gray-300 text-sm">Cortes dinámicos optimizados para retener audiencia en TikTok, Instagram y Shorts.</p>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Edición de Videos y Reels</h3>
-                    <p class="text-gray-400 text-sm">Cortes dinámicos optimizados para retener audiencia en TikTok, Instagram y Shorts.</p>
                 </div>
 
-                <div class="bg-cardbg border border-gray-800/80 p-8 rounded-2xl hover:border-accent transition">
-                    <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6 text-xl">
-                        <i class="fa-solid fa-bullhorn"></i>
+                <!-- 3. CREACIÓN DE CONTENIDO PARA REDES -->
+                <div class="relative rounded-3xl overflow-hidden min-h-[350px] flex flex-col justify-end p-8 group border border-gray-800">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('creacioncontenido.jpg');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
+                    <div class="relative z-10">
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Asesoramiento</span>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Creación de Contenido para Redes</h3>
+                        <p class="text-gray-300 text-sm">Estrategias de contenido orientadas a posicionar tu marca personal o proyecto.</p>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Creación de Contenido para Redes</h3>
-                    <p class="text-gray-400 text-sm">Estrategias de contenido orientadas a posicionar tu marca personal o proyecto.</p>
                 </div>
 
-                <div class="bg-cardbg border border-gray-800/80 p-8 rounded-2xl hover:border-accent transition">
-                    <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6 text-xl">
-                        <i class="fa-solid fa-chess"></i>
+                <!-- 4. ESTRATEGIAS DE CONTENIDOS -->
+                <div class="relative rounded-3xl overflow-hidden min-h-[350px] flex flex-col justify-end p-8 group border border-gray-800">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('calendario.jpg');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
+                    <div class="relative z-10">
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Planificación</span>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Estrategias de Contenidos</h3>
+                        <p class="text-gray-300 text-sm">Planificación de temáticas, formatos y calendarios de publicación.</p>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Estrategias de Contenidos</h3>
-                    <p class="text-gray-400 text-sm">Planificación de temáticas, formatos y calendarios de publicación.</p>
                 </div>
 
-                <div class="bg-cardbg border border-gray-800/80 p-8 rounded-2xl hover:border-accent transition md:col-span-2">
-                    <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6 text-xl">
-                        <i class="fa-solid fa-chart-line"></i>
+                <!-- 5. ANÁLISIS DE MÉTRICAS Y OPTIMIZACIÓN -->
+                <div class="relative rounded-3xl overflow-hidden min-h-[350px] flex flex-col justify-end p-8 group border border-gray-800 md:col-span-2">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('metricas.jpg');"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
+                    <div class="relative z-10">
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Rendimiento</span>
+                        <h3 class="text-2xl font-bold mb-2 text-white">Análisis de Métricas y Optimización</h3>
+                        <p class="text-gray-300 text-sm">Evaluación de rendimiento de tus publicaciones para ajustar el rumbo y potenciar el alcance orgánico.</p>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Análisis de Métricas y Optimización</h3>
-                    <p class="text-gray-400 text-sm">Evaluación de rendimiento de tus publicaciones para ajustar el rumbo y potenciar el alcance orgánico.</p>
                 </div>
+
             </div>
         </div>
     </section>
@@ -191,7 +211,7 @@
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Detrás de EdaEstudio</h2>
             <p class="text-gray-300 text-lg leading-relaxed mb-8">
-                Hola, soy <span class="text-white font-bold">Juan Ignacio Román</span>. Creé este espacio con el objetivo de brindar la infraestructura y el acompañamiento profesional que los creadores, marcas y podcasters necesitan para llevar su contenido al siguiente nivel sin complicaciones técnicas.
+                Hola, soy <span class="text-white font-bold">Juan Antonio Román</span>. Creé este espacio con el objetivo de brindar la infraestructura y el acompañamiento profesional que los creadores, marcas y podcasters necesitan para llevar su contenido al siguiente nivel sin complicaciones técnicas.
             </p>
             <div class="inline-block border-t border-b border-accent/30 py-3 px-6 text-accent font-bold tracking-wider uppercase text-sm">
                 Creá • Grabá • Crecé
@@ -199,19 +219,71 @@
         </div>
     </section>
 
-    <!-- CONTACTO / FOOTER -->
-    <footer id="contacto" class="bg-cardbg border-t border-gray-800 py-16">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-4">¿Listo para empezar a grabar?</h2>
-            <p class="text-gray-400 mb-8 max-w-xl mx-auto">Ponete en contacto para coordinar turnos en los estudios o consultar por presupuestos de edición y estrategia.</p>
+    <!-- SECCIÓN CONTACTO INTERACTIVA (WHATSAPP CON SELECCIÓN) -->
+    <section id="contacto" class="py-24 bg-cardbg border-t border-gray-800">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Armá tu consulta</h2>
+            <p class="text-gray-400 mb-10">Seleccioná los espacios y servicios que te interesan para enviarnos un mensaje directo por WhatsApp con tu requerimiento.</p>
             
-            <div class="flex justify-center gap-4 mb-12">
-                <a href="https://wa.me/" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 rounded-xl transition flex items-center gap-3">
-                    <i class="fa-brands fa-whatsapp text-xl"></i> Escribinos por WhatsApp
-                </a>
+            <div class="bg-zinc-900/80 border border-gray-800 rounded-3xl p-8 text-left mb-8 space-y-8">
+                <!-- Elección de Estudio -->
+                <div>
+                    <label class="block text-sm font-bold uppercase tracking-wider text-accent mb-3">1. ¿Qué estudio te interesa? (Opcional)</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
+                            <input type="radio" name="estudio" value="Estudio 1" class="accent-rose-600 w-4 h-4">
+                            <span class="text-sm font-semibold">Estudio 1</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
+                            <input type="radio" name="estudio" value="Estudio 2" class="accent-rose-600 w-4 h-4">
+                            <span class="text-sm font-semibold">Estudio 2</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
+                            <input type="radio" name="estudio" value="Ambos / Indeciso" class="accent-rose-600 w-4 h-4">
+                            <span class="text-sm font-semibold">Me interesan ambos</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Elección de Servicios (Múltiples) -->
+                <div>
+                    <label class="block text-sm font-bold uppercase tracking-wider text-accent mb-3">2. ¿Qué servicios te interesan? (Podés elegir varios)</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
+                            <input type="checkbox" name="servicio" value="Estudio para Streaming y Podcast" class="accent-rose-600 w-4 h-4 rounded">
+                            <span class="text-sm font-semibold">Streaming y Podcast</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
+                            <input type="checkbox" name="servicio" value="Edición de Videos y Reels" class="accent-rose-600 w-4 h-4 rounded">
+                            <span class="text-sm font-semibold">Edición de Videos y Reels</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
+                            <input type="checkbox" name="servicio" value="Creación de Contenido para Redes" class="accent-rose-600 w-4 h-4 rounded">
+                            <span class="text-sm font-semibold">Creación de Contenido</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
+                            <input type="checkbox" name="servicio" value="Estrategias de Contenidos" class="accent-rose-600 w-4 h-4 rounded">
+                            <span class="text-sm font-semibold">Estrategias de Contenidos</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none sm:col-span-2">
+                            <input type="checkbox" name="servicio" value="Análisis de Métricas y Optimización" class="accent-rose-600 w-4 h-4 rounded">
+                            <span class="text-sm font-semibold">Análisis de Métricas y Optimización</span>
+                        </label>
+                    </div>
+                </div>
             </div>
 
-            <div class="text-sm text-gray-500 border-t border-gray-800/80 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <!-- Botón de Envío Dinámico -->
+            <button onclick="enviarWhatsApp()" class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-bold px-10 py-4 rounded-xl transition flex items-center justify-center gap-3 mx-auto shadow-xl shadow-green-900/20 text-base">
+                <i class="fa-brands fa-whatsapp text-2xl"></i> Enviar consulta por WhatsApp
+            </button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-darkbg border-t border-gray-900 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p>&copy; 2026 EdaEstudio. Todos los derechos reservados.</p>
                 <div class="flex space-x-6 text-lg">
                     <a href="https://instagram.com/edaestudio_" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-instagram"></i></a>
@@ -221,6 +293,36 @@
             </div>
         </div>
     </footer>
+
+    <!-- SCRIPT PARA ARMAR EL MENSAJE DE WHATSAPP -->
+    <script>
+        function enviarWhatsApp() {
+            const telefono = "5492213501892";
+            
+            // Obtener estudio seleccionado
+            const estudioSeleccionado = document.querySelector('input[name="estudio"]:checked');
+            let textoEstudio = estudioSeleccionado ? estudioSeleccionado.value : "No especificado / General";
+
+            // Obtener servicios seleccionados
+            const serviciosSeleccionados = document.querySelectorAll('input[name="servicio"]:checked');
+            let listaServicios = [];
+            serviciosSeleccionados.forEach((checkbox) => {
+                listaServicios.push("• " + checkbox.value);
+            });
+
+            let textoServicios = listaServicios.length > 0 ? listaServicios.join("\n") : "• Ninguno en particular por ahora";
+
+            // Armar mensaje predeterminado
+            let mensaje = `¡Hola Juan! 👋 Vi la página de EdaEstudio y me gustaría consultarles lo siguiente:\n\n` +
+                          `🏢 *Espacio de interés:* ${textoEstudio}\n\n` +
+                          `⚙️ *Servicios de interés:*\n${textoServicios}\n\n` +
+                          `¿Me pasarían más información y disponibilidad? ¡Gracias!`;
+
+            // Codificar para URL y abrir WhatsApp
+            let urlWhatsApp = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+            window.open(urlWhatsApp, '_blank');
+        }
+    </script>
 
 </body>
 </html>

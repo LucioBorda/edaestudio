@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Creativo Audiovisual | Juan Ignacio Román</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#0a0a0a',
+                        cardbg: '#161616',
+                        accent: '#e11d48' // Un rojo vibrante estilo streaming/podcast
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkbg text-gray-100 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-darkbg/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-black tracking-wider uppercase">
+                Juan Ignacio <span class="text-accent">Román</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+                <a href="#estudios" class="hover:text-accent transition">Estudios</a>
+                <a href="#servicios" class="hover:text-accent transition">Servicios</a>
+                <a href="#sobre-mi" class="hover:text-accent transition">Sobre Mí</a>
+            </nav>
+            <a href="#contacto" class="bg-accent hover:bg-rose-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition shadow-lg shadow-rose-900/30">
+                Reservar / Contacto
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="pt-32 pb-20 md:pt-44 md:py-32 relative overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0 opacity-20 bg-[radial-gradient(#e11d48_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+            <span class="inline-block bg-accent/10 text-accent border border-accent/20 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-6">
+                Creá • Grabá • Crecé
+            </span>
+            <h1 class="text-4xl md:text-7xl font-black tracking-tight mb-6">
+                Estudio Creativo <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-red-600">Audiovisual</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+                Potenciamos tu marca personal, podcast y redes sociales con infraestructura profesional y estrategia de contenido de alto nivel.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#estudios" class="bg-accent hover:bg-rose-700 text-white font-bold px-8 py-4 rounded-xl transition shadow-xl shadow-rose-900/20">
+                    Conocé los Estudios
+                </a>
+                <a href="#servicios" class="bg-cardbg hover:bg-zinc-800 border border-gray-800 font-bold px-8 py-4 rounded-xl transition">
+                    Ver Servicios
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ESTUDIOS -->
+    <section id="estudios" class="py-24 bg-zinc-950/50 border-t border-b border-gray-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-black mb-4">Nuestros Espacios</h2>
+                <p class="text-gray-400">Dos estudios totalmente equipados, diseñados a medida para streaming, entrevistas y podcast de calidad profesional.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- ESTUDIO 1 -->
+                <div class="bg-cardbg border border-gray-800 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group hover:border-accent/50 transition">
+                    <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider">
+                        Streaming y Entrevista
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black mb-6 text-white">Estudio 1</h3>
+                        <ul class="space-y-3.5 text-gray-300 text-sm md:text-base">
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Sillas ergonómicas x 4</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Cámaras Logitech Brio 4K x 3</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Micrófonos Shure MV7+ x 4</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Micrófonos Hollyland Lark M2</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Pantalla de retorno 50”</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Auriculares Behringer retorno x 4</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Fondo personalizable</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Iluminación profesional adaptable</li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-gray-800">
+                        <a href="#contacto" class="text-accent font-semibold hover:underline flex items-center gap-2">
+                            Reservar Estudio 1 <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ESTUDIO 2 -->
+                <div class="bg-cardbg border border-gray-800 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group hover:border-accent/50 transition">
+                    <div class="absolute top-0 right-0 bg-zinc-800 text-gray-200 text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider">
+                        Podcast y Entrevista
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-black mb-6 text-white">Estudio 2</h3>
+                        <ul class="space-y-3.5 text-gray-300 text-sm md:text-base">
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Sillones individuales x 2</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Sillón de dos cuerpos</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Cámaras Logitech Brio 4K x 3</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Micrófonos Shure MV7+</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Micrófonos Hollyland Lark M2</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Pantalla de retorno 50”</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Fondo personalizable</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Iluminación profesional adaptable</li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-gray-800">
+                        <a href="#contacto" class="text-accent font-semibold hover:underline flex items-center gap-2">
+                            Reservar Estudio 2 <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section id="servicios" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-accent text-xs font-bold uppercase tracking-widest">Contenido Estratégico</span>
+                <h2 class="text-3xl md:text-4xl font-black mt-2 mb-4">Nuestros Servicios</h2>
+                <p class="text-gray-400">No solo grabamos, te acompañamos en todo el proceso de crecimiento digital.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-cardbg border border-gray-800/80 p-8 rounded-2xl hover:border-accent transition">
+                    <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6 text-xl">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Estudio para Streaming y Podcast</h3>
+                    <p class="text-gray-400 text-sm">Alquiler de espacios full equipados con soporte técnico en vivo.</p>
+                </div>
+
+                <div class="bg-cardbg border border-gray-800/80 p-8 rounded-2xl hover:border-accent transition">
+                    <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6 text-xl">
+                        <i class="fa-solid fa-clapperboard"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Edición de Videos y Reels</h3>
+                    <p class="text-gray-400 text-sm">Cortes dinámicos optimizados para retener audiencia en TikTok, Instagram y Shorts.</p>
+                </div>
+
+                <div class="bg-cardbg border border-gray-800/80 p-8 rounded-2xl hover:border-accent transition">
+                    <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6 text-xl">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Creación de Contenido para Redes</h3>
+                    <p class="text-gray-400 text-sm">Estrategias de contenido orientadas a posicionar tu marca personal o proyecto.</p>
+                </div>
+
+                <div class="bg-cardbg border border-gray-800/80 p-8 rounded-2xl hover:border-accent transition">
+                    <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6 text-xl">
+                        <i class="fa-solid fa-chess"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Estrategias de Contenidos</h3>
+                    <p class="text-gray-400 text-sm">Planificación de temáticas, formatos y calendarios de publicación.</p>
+                </div>
+
+                <div class="bg-cardbg border border-gray-800/80 p-8 rounded-2xl hover:border-accent transition md:col-span-2">
+                    <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center text-accent mb-6 text-xl">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Análisis de Métricas y Optimización</h3>
+                    <p class="text-gray-400 text-sm">Evaluación de rendimiento de tus publicaciones para ajustar el rumbo y potenciar el alcance orgánico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MÍ (JUAN IGNACIO ROMÁN) -->
+    <section id="sobre-mi" class="py-24 bg-zinc-950/50 border-t border-gray-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-black mb-6">Detrás del estudio</h2>
+            <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                Hola, soy <span class="text-white font-bold">Juan Ignacio Román</span>. Creé este espacio con el objetivo de brindar la infraestructura y el acompañamiento profesional que los creadores, marcas y podcasters necesitan para llevar su contenido al siguiente nivel sin complicaciones técnicas.
+            </p>
+            <div class="inline-block border-t border-b border-accent/30 py-3 px-6 text-accent font-semibold tracking-wider uppercase text-sm">
+                Creá • Grabá • Crecé
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO / FOOTER -->
+    <footer id="contacto" class="bg-cardbg border-t border-gray-800 py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-black mb-4">¿Listo para empezar a grabar?</h2>
+            <p class="text-gray-400 mb-8 max-w-xl mx-auto">Ponete en contacto para coordinar turnos en los estudios o consultar por presupuestos de edición y estrategia.</p>
+            
+            <div class="flex justify-center gap-4 mb-12">
+                <a href="https://wa.me/" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 rounded-xl transition flex items-center gap-3">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Escribinos por WhatsApp
+                </a>
+            </div>
+
+            <div class="text-sm text-gray-500 border-t border-gray-800/80 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 Juan Ignacio Román - Estudio Creativo Audiovisual. Todos los derechos reservados.</p>
+                <div class="flex space-x-6 text-lg">
+                    <a href="#" class="hover:text-accent transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-accent transition"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="hover:text-accent transition"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

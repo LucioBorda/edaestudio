@@ -239,55 +239,43 @@
         </div>
     </section>
 
-    <!-- SECCIÓN CONTACTO INTERACTIVA (WHATSAPP CON SELECCIÓN) -->
+    <!-- SECCIÓN CONTACTO INTERACTIVA (WHATSAPP CON SELECCIÓN SIMPLIFICADA) -->
     <section id="contacto" class="py-24 bg-cardbg border-t border-gray-800">
         <div class="max-w-3xl mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-4 text-textcustom font-heading">Armá tu consulta</h2>
-            <p class="text-gray-400 mb-10 font-sans">Seleccioná los espacios y servicios que te interesan para enviarnos un mensaje directo por WhatsApp con tu requerimiento.</p>
+            <p class="text-gray-400 mb-10 font-sans">Seleccioná los espacios y el servicio estratégico que te interesan para enviarnos un mensaje directo por WhatsApp.</p>
             
             <div class="bg-darkbg border border-gray-800 rounded-3xl p-8 text-left mb-8 space-y-8 font-sans">
-                <!-- Elección de Estudio -->
+                <!-- Elección de Estudio (Estudio 1, Estudio 2, Ambos, Ninguno) -->
                 <div>
-                    <label class="block text-sm font-bold uppercase tracking-wider text-accent mb-3 font-heading">1. ¿Qué estudio te interesa? (Opcional)</label>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
+                    <label class="block text-sm font-bold uppercase tracking-wider text-accent mb-3 font-heading">1. ¿Qué espacio te interesa?</label>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                        <label class="flex items-center justify-center gap-2 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none text-center">
                             <input type="radio" name="estudio" value="Estudio 1" class="accent-rose-600 w-4 h-4">
                             <span class="text-sm font-semibold text-textcustom">Estudio 1</span>
                         </label>
-                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
+                        <label class="flex items-center justify-center gap-2 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none text-center">
                             <input type="radio" name="estudio" value="Estudio 2" class="accent-rose-600 w-4 h-4">
                             <span class="text-sm font-semibold text-textcustom">Estudio 2</span>
                         </label>
-                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
-                            <input type="radio" name="estudio" value="Ambos / Indeciso" class="accent-rose-600 w-4 h-4">
-                            <span class="text-sm font-semibold text-textcustom">Me interesan ambos</span>
+                        <label class="flex items-center justify-center gap-2 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none text-center">
+                            <input type="radio" name="estudio" value="Ambos estudios" class="accent-rose-600 w-4 h-4">
+                            <span class="text-sm font-semibold text-textcustom">Ambos</span>
+                        </label>
+                        <label class="flex items-center justify-center gap-2 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none text-center">
+                            <input type="radio" name="estudio" value="Ninguno en particular" class="accent-rose-600 w-4 h-4">
+                            <span class="text-sm font-semibold text-textcustom">Ninguno</span>
                         </label>
                     </div>
                 </div>
 
-                <!-- Elección de Servicios (Múltiples) -->
+                <!-- Elección de Servicio Único -->
                 <div>
-                    <label class="block text-sm font-bold uppercase tracking-wider text-accent mb-3 font-heading">2. ¿Qué servicios te interesan? (Podés elegir varios)</label>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
-                            <input type="checkbox" name="servicio" value="Estudio para Streaming y Podcast" class="accent-rose-600 w-4 h-4 rounded">
-                            <span class="text-sm font-semibold text-textcustom">Streaming y Podcast</span>
-                        </label>
-                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
-                            <input type="checkbox" name="servicio" value="Edición de Videos y Reels" class="accent-rose-600 w-4 h-4 rounded">
-                            <span class="text-sm font-semibold text-textcustom">Edición de Videos y Reels</span>
-                        </label>
-                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
-                            <input type="checkbox" name="servicio" value="Creación de Contenido para Redes" class="accent-rose-600 w-4 h-4 rounded">
-                            <span class="text-sm font-semibold text-textcustom">Creación de Contenido</span>
-                        </label>
-                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
-                            <input type="checkbox" name="servicio" value="Estrategias de Contenidos" class="accent-rose-600 w-4 h-4 rounded">
-                            <span class="text-sm font-semibold text-textcustom">Estrategias de Contenidos</span>
-                        </label>
-                        <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none sm:col-span-2">
-                            <input type="checkbox" name="servicio" value="Análisis de Métricas y Optimización" class="accent-rose-600 w-4 h-4 rounded">
-                            <span class="text-sm font-semibold text-textcustom">Análisis de Métricas y Optimización</span>
+                    <label class="block text-sm font-bold uppercase tracking-wider text-accent mb-3 font-heading">2. Servicio de interés</label>
+                    <div>
+                        <label class="flex items-center gap-3 p-4 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
+                            <input type="checkbox" id="servicioEstrategico" value="Creación de contenido estratégico" class="accent-rose-600 w-5 h-5 rounded">
+                            <span class="text-sm font-semibold text-textcustom">Creación de contenido estratégico</span>
                         </label>
                     </div>
                 </div>
@@ -320,23 +308,18 @@
         function enviarWhatsApp() {
             const telefono = "5492213501892";
             
-            // Obtener estudio seleccionado
+            // Obtener espacio seleccionado
             const estudioSeleccionado = document.querySelector('input[name="estudio"]:checked');
-            let textoEstudio = estudioSeleccionado ? estudioSeleccionado.value : "No especificado / General";
+            let textoEspacio = estudioSeleccionado ? estudioSeleccionado.value : "No especificado";
 
-            // Obtener servicios seleccionados
-            const serviciosSeleccionados = document.querySelectorAll('input[name="servicio"]:checked');
-            let listaServicios = [];
-            serviciosSeleccionados.forEach((checkbox) => {
-                listaServicios.push("• " + checkbox.value);
-            });
-
-            let textoServicios = listaServicios.length > 0 ? listaServicios.join("\n") : "• Ninguno en particular por ahora";
+            // Obtener si seleccionó el servicio estratégico
+            const servicioCheckbox = document.getElementById('servicioEstrategico');
+            let textoServicio = servicioCheckbox.checked ? "• Creación de contenido estratégico" : "• Consulta general";
 
             // Armar mensaje predeterminado
             let mensaje = `¡Hola Juani! 👋 Vi la página de edaestudio y me gustaría consultarles lo siguiente:\n\n` +
-                          `🏢 *Espacio de interés:* ${textoEstudio}\n\n` +
-                          `⚙️ *Servicios de interés:*\n${textoServicios}\n\n` +
+                          `🏢 *Espacio de interés:* ${textoEspacio}\n\n` +
+                          `⚙️ *Servicio de interés:*\n${textoServicio}\n\n` +
                           `¿Me pasarían más información y disponibilidad? ¡Gracias!`;
 
             // Codificar para URL y abrir WhatsApp

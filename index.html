@@ -50,13 +50,13 @@
         </div>
     </header>
 
-    <!-- HERO SECTION CON FOTO VERTICAL DE LOS ESTUDIOS DETRÁS -->
-    <section class="pt-32 pb-20 md:pt-44 md:py-32 relative overflow-hidden flex items-center justify-center">
+    <!-- HERO SECTION CON FOTO VERTICAL DETRÁS Y EL ESCRITORIO VECTORIAL ABAJO -->
+    <section class="pt-32 pb-20 md:pt-44 md:py-32 relative overflow-hidden flex flex-col items-center justify-center">
         <!-- Imagen vertical de fondo con oscurecimiento para lectura perfecta -->
         <div class="absolute inset-0 z-0 bg-cover bg-center opacity-30" style="background-image: url('hero-estudios.jpg');"></div>
         <div class="absolute inset-0 z-0 bg-gradient-to-b from-darkbg/95 via-darkbg/75 to-darkbg"></div>
 
-        <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10 mb-12">
             <span class="inline-block bg-accent/20 text-accent border border-accent/30 text-xs font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full mb-6 backdrop-blur-sm font-heading">
                 Creá • Grabá • Crecé
             </span>
@@ -75,6 +75,13 @@
                 </a>
             </div>
         </div>
+
+        <!-- Ilustración del escritorio integrada debajo de los botones del Hero -->
+        <div class="w-full max-w-4xl px-6 relative z-10 mt-6">
+            <div class="opacity-90 hover:opacity-100 transition duration-300 transform hover:scale-[1.02]">
+                <img src="escritorio-vector.png" alt="Esquema del estudio edaestudio" class="w-full max-w-xl mx-auto object-contain filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.6)]">
+            </div>
+        </div>
     </section>
 
     <!-- SECCIÓN ESTUDIOS (CON FOTO DE FONDO BLUREADA) -->
@@ -88,9 +95,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- ESTUDIO 1 -->
                 <div class="relative rounded-3xl overflow-hidden p-8 md:p-10 flex flex-col justify-between border border-gray-800 group">
-                    <!-- Foto de fondo del espacio 1 con blur y zoom al hacer hover -->
                     <div class="absolute inset-0 bg-cover bg-center filter blur-[2px] scale-105 transition-transform duration-700 group-hover:scale-110" style="background-image: url('espacio1.jpg');"></div>
-                    <!-- Capa oscura semitransparente para que el texto resalte perfecto -->
                     <div class="absolute inset-0 bg-darkbg/85 backdrop-blur-[1px]"></div>
 
                     <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider font-heading z-10">
@@ -120,9 +125,7 @@
 
                 <!-- ESTUDIO 2 -->
                 <div class="relative rounded-3xl overflow-hidden p-8 md:p-10 flex flex-col justify-between border border-gray-800 group">
-                    <!-- Foto de fondo del espacio 2 con blur y zoom al hacer hover -->
                     <div class="absolute inset-0 bg-cover bg-center filter blur-[2px] scale-105 transition-transform duration-700 group-hover:scale-110" style="background-image: url('espacio2.jpg');"></div>
-                    <!-- Capa oscura semitransparente para que el texto resalte perfecto -->
                     <div class="absolute inset-0 bg-darkbg/85 backdrop-blur-[1px]"></div>
 
                     <div class="absolute top-0 right-0 bg-zinc-700 text-gray-200 text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider font-heading z-10">
@@ -297,17 +300,11 @@
         </div>
     </section>
 
-    <!-- FOOTER CON ILUSTRACIÓN DEL ESCRITORIO -->
-    <footer class="bg-darkbg border-t border-gray-900 pt-16 pb-12 overflow-hidden">
+    <!-- FOOTER -->
+    <footer class="bg-darkbg border-t border-gray-900 py-12">
         <div class="max-w-5xl mx-auto px-6 text-center">
-            
-            <!-- Ilustración del escritorio integrada -->
-            <div class="mb-10 opacity-75 hover:opacity-100 transition duration-300">
-                <img src="escritorio-vector.png" alt="Esquema del estudio edaestudio" class="max-w-xs md:max-w-md mx-auto object-contain filter drop-shadow-[0_10px_20px_rgba(225,29,72,0.15)]">
-            </div>
-
             <!-- Copyright y Redes -->
-            <div class="text-sm text-gray-500 border-t border-gray-800/80 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 font-sans">
+            <div class="text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4 font-sans">
                 <p>&copy; 2026 edaestudio. Todos los derechos reservados.</p>
                 <div class="flex space-x-6 text-lg">
                     <a href="https://instagram.com/edaestudio_" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-instagram"></i></a>

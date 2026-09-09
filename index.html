@@ -21,7 +21,7 @@
                     },
                     colors: {
                         darkbg: '#1c1c1c', // Gris oscuro neutro exacto
-                        cardbg: '#252525', // Gris un poco más claro para tarjetas
+                        cardbg: '#252525', // Gris un poco más claro para tarjetas secundarias
                         textcustom: '#F3F3F1', // Blanco suave personalizado
                         accent: '#e11d48' // Rojo vibrante estilo streaming/podcast
                     }
@@ -33,7 +33,7 @@
 </head>
 <body class="bg-darkbg text-textcustom font-sans antialiased selection:bg-accent selection:text-white">
 
-<!-- HEADER / NAVBAR -->
+    <!-- HEADER / NAVBAR -->
     <header class="fixed top-0 left-0 w-full z-50 bg-[#1c1c1c]/90 backdrop-blur-md border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="font-logo text-2xl font-bold tracking-wider text-white lowercase">
@@ -77,7 +77,7 @@
         </div>
     </section>
 
-    <!-- SECCIÓN ESTUDIOS -->
+    <!-- SECCIÓN ESTUDIOS (CON FOTO DE FONDO BLUREADA) -->
     <section id="estudios" class="py-24 bg-[#161616] border-t border-b border-gray-800/60">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -87,13 +87,19 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- ESTUDIO 1 -->
-                <div class="bg-cardbg border border-gray-800/80 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group hover:border-accent/50 transition">
-                    <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider font-heading">
+                <div class="relative rounded-3xl overflow-hidden p-8 md:p-10 flex flex-col justify-between border border-gray-800 group">
+                    <!-- Foto de fondo del espacio 1 con blur y zoom al hacer hover -->
+                    <div class="absolute inset-0 bg-cover bg-center filter blur-[2px] scale-105 transition-transform duration-700 group-hover:scale-110" style="background-image: url('espacio1.jpg');"></div>
+                    <!-- Capa oscura semitransparente para que el texto resalte perfecto -->
+                    <div class="absolute inset-0 bg-darkbg/85 backdrop-blur-[1px]"></div>
+
+                    <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider font-heading z-10">
                         Streaming y Entrevista
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-6 text-textcustom font-heading">Estudio 1</h3>
-                        <ul class="space-y-3.5 text-gray-300 text-sm md:text-base font-sans">
+                    
+                    <div class="relative z-10">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-6 text-textcustom font-heading">Estudio 1</h3>
+                        <ul class="space-y-3.5 text-gray-200 text-sm md:text-base font-sans">
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Sillas ergonómicas x 4</li>
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Cámaras Logitech Brio 4K x 3</li>
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Micrófonos Shure MV7+ x 4</li>
@@ -104,7 +110,8 @@
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Iluminación profesional adaptable</li>
                         </ul>
                     </div>
-                    <div class="mt-8 pt-6 border-t border-gray-800">
+                    
+                    <div class="mt-8 pt-6 border-t border-gray-700/60 relative z-10">
                         <a href="#contacto" class="text-accent font-semibold hover:underline flex items-center gap-2 font-sans">
                             Reservar Estudio 1 <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
@@ -112,13 +119,19 @@
                 </div>
 
                 <!-- ESTUDIO 2 -->
-                <div class="bg-cardbg border border-gray-800/80 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group hover:border-accent/50 transition">
-                    <div class="absolute top-0 right-0 bg-zinc-700 text-gray-200 text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider font-heading">
+                <div class="relative rounded-3xl overflow-hidden p-8 md:p-10 flex flex-col justify-between border border-gray-800 group">
+                    <!-- Foto de fondo del espacio 2 con blur y zoom al hacer hover -->
+                    <div class="absolute inset-0 bg-cover bg-center filter blur-[2px] scale-105 transition-transform duration-700 group-hover:scale-110" style="background-image: url('espacio2.jpg');"></div>
+                    <!-- Capa oscura semitransparente para que el texto resalte perfecto -->
+                    <div class="absolute inset-0 bg-darkbg/85 backdrop-blur-[1px]"></div>
+
+                    <div class="absolute top-0 right-0 bg-zinc-700 text-gray-200 text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider font-heading z-10">
                         Podcast y Entrevista
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-6 text-textcustom font-heading">Estudio 2</h3>
-                        <ul class="space-y-3.5 text-gray-300 text-sm md:text-base font-sans">
+                    
+                    <div class="relative z-10">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-6 text-textcustom font-heading">Estudio 2</h3>
+                        <ul class="space-y-3.5 text-gray-200 text-sm md:text-base font-sans">
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Sillones individuales x 2</li>
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Sillón de dos cuerpos</li>
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Cámaras Logitech Brio 4K x 3</li>
@@ -129,7 +142,8 @@
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Iluminación profesional adaptable</li>
                         </ul>
                     </div>
-                    <div class="mt-8 pt-6 border-t border-gray-800">
+                    
+                    <div class="mt-8 pt-6 border-t border-gray-700/60 relative z-10">
                         <a href="#contacto" class="text-accent font-semibold hover:underline flex items-center gap-2 font-sans">
                             Reservar Estudio 2 <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>

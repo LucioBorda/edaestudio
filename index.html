@@ -6,20 +6,22 @@
     <title>EdaEstudio | Estudio Creativo Audiovisual</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Quicksand (Sans Serif Rounded Bold) -->
+    <!-- Google Fonts oficiales: Fredoka (Logo), Manrope (Títulos), Inter (Textos) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Quicksand', 'sans-serif'],
+                        logo: ['Fredoka', 'sans-serif'],
+                        heading: ['Manrope', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        darkbg: '#1c1c1c', // Gris oscuro neutro exacto al de tu imagen
-                        cardbg: '#252525', // Gris un poco más claro para contraste en tarjetas
+                        darkbg: '#1c1c1c', // Gris oscuro neutro exacto
+                        cardbg: '#252525', // Gris un poco más claro para tarjetas
                         textcustom: '#F3F3F1', // Blanco suave personalizado
                         accent: '#e11d48' // Rojo vibrante estilo streaming/podcast
                     }
@@ -34,15 +36,15 @@
     <!-- HEADER / NAVBAR -->
     <header class="fixed top-0 left-0 w-full z-50 bg-[#1c1c1c]/90 backdrop-blur-md border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-xl font-bold tracking-wider uppercase text-textcustom">
+            <a href="#" class="font-logo text-2xl font-bold tracking-wider text-white">
                 Eda<span class="text-accent">Estudio</span>
             </a>
-            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-gray-300">
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-300 font-sans">
                 <a href="#estudios" class="hover:text-accent transition">Estudios</a>
                 <a href="#servicios" class="hover:text-accent transition">Servicios</a>
                 <a href="#sobre-mi" class="hover:text-accent transition">Sobre Mí</a>
             </nav>
-            <a href="#contacto" class="bg-accent hover:bg-rose-700 text-white text-sm font-bold px-5 py-2.5 rounded-full transition shadow-lg shadow-rose-900/30">
+            <a href="#contacto" class="bg-accent hover:bg-rose-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition shadow-lg shadow-rose-900/30 font-sans">
                 Reservar / Contacto
             </a>
         </div>
@@ -55,20 +57,20 @@
         <div class="absolute inset-0 z-0 bg-gradient-to-b from-darkbg/95 via-darkbg/75 to-darkbg"></div>
 
         <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
-            <span class="inline-block bg-accent/20 text-accent border border-accent/30 text-xs font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full mb-6 backdrop-blur-sm">
+            <span class="inline-block bg-accent/20 text-accent border border-accent/30 text-xs font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full mb-6 backdrop-blur-sm font-heading">
                 Creá • Grabá • Crecé
             </span>
-            <h1 class="text-4xl md:text-7xl font-bold tracking-tight mb-6 text-textcustom">
+            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-6 text-textcustom font-heading">
                 Estudio Creativo <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-red-600">Audiovisual</span>
             </h1>
-            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+            <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-10 font-sans">
                 Potenciamos tu marca personal, podcast y redes sociales con infraestructura profesional y estrategia de contenido de alto nivel.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#estudios" class="bg-accent hover:bg-rose-700 text-white font-bold px-8 py-4 rounded-xl transition shadow-xl shadow-rose-900/20">
+                <a href="#estudios" class="bg-accent hover:bg-rose-700 text-white font-semibold px-8 py-4 rounded-xl transition shadow-xl shadow-rose-900/25 font-sans">
                     Conocé los Estudios
                 </a>
-                <a href="#servicios" class="bg-cardbg/90 backdrop-blur-sm hover:bg-[#303030] border border-gray-700 font-bold px-8 py-4 rounded-xl transition text-textcustom">
+                <a href="#servicios" class="bg-cardbg/90 backdrop-blur-sm hover:bg-[#303030] border border-gray-700 font-semibold px-8 py-4 rounded-xl transition text-textcustom font-sans">
                     Ver Servicios
                 </a>
             </div>
@@ -79,19 +81,19 @@
     <section id="estudios" class="py-24 bg-[#161616] border-t border-b border-gray-800/60">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-textcustom">Nuestros Espacios</h2>
-                <p class="text-gray-400">Dos estudios totalmente equipados, diseñados a medida para streaming, entrevistas y podcast de calidad profesional.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-textcustom font-heading">Nuestros Espacios</h2>
+                <p class="text-gray-400 font-sans">Dos estudios totalmente equipados, diseñados a medida para streaming, entrevistas y podcast de calidad profesional.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- ESTUDIO 1 -->
                 <div class="bg-cardbg border border-gray-800/80 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group hover:border-accent/50 transition">
-                    <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider">
+                    <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider font-heading">
                         Streaming y Entrevista
                     </div>
                     <div>
-                        <h3 class="text-2xl font-bold mb-6 text-textcustom">Estudio 1</h3>
-                        <ul class="space-y-3.5 text-gray-300 text-sm md:text-base">
+                        <h3 class="text-2xl font-bold mb-6 text-textcustom font-heading">Estudio 1</h3>
+                        <ul class="space-y-3.5 text-gray-300 text-sm md:text-base font-sans">
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Sillas ergonómicas x 4</li>
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Cámaras Logitech Brio 4K x 3</li>
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Micrófonos Shure MV7+ x 4</li>
@@ -103,7 +105,7 @@
                         </ul>
                     </div>
                     <div class="mt-8 pt-6 border-t border-gray-800">
-                        <a href="#contacto" class="text-accent font-bold hover:underline flex items-center gap-2">
+                        <a href="#contacto" class="text-accent font-semibold hover:underline flex items-center gap-2 font-sans">
                             Reservar Estudio 1 <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
                     </div>
@@ -111,12 +113,12 @@
 
                 <!-- ESTUDIO 2 -->
                 <div class="bg-cardbg border border-gray-800/80 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group hover:border-accent/50 transition">
-                    <div class="absolute top-0 right-0 bg-zinc-700 text-gray-200 text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider">
+                    <div class="absolute top-0 right-0 bg-zinc-700 text-gray-200 text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider font-heading">
                         Podcast y Entrevista
                     </div>
                     <div>
-                        <h3 class="text-2xl font-bold mb-6 text-textcustom">Estudio 2</h3>
-                        <ul class="space-y-3.5 text-gray-300 text-sm md:text-base">
+                        <h3 class="text-2xl font-bold mb-6 text-textcustom font-heading">Estudio 2</h3>
+                        <ul class="space-y-3.5 text-gray-300 text-sm md:text-base font-sans">
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Sillones individuales x 2</li>
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Sillón de dos cuerpos</li>
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Cámaras Logitech Brio 4K x 3</li>
@@ -128,7 +130,7 @@
                         </ul>
                     </div>
                     <div class="mt-8 pt-6 border-t border-gray-800">
-                        <a href="#contacto" class="text-accent font-bold hover:underline flex items-center gap-2">
+                        <a href="#contacto" class="text-accent font-semibold hover:underline flex items-center gap-2 font-sans">
                             Reservar Estudio 2 <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
                     </div>
@@ -141,9 +143,9 @@
     <section id="servicios" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-accent text-xs font-bold uppercase tracking-widest">Contenido Estratégico</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-textcustom">Nuestros Servicios</h2>
-                <p class="text-gray-400">No solo grabamos, te acompañamos en todo el proceso de crecimiento digital.</p>
+                <span class="text-accent text-xs font-bold uppercase tracking-widest font-heading">Contenido Estratégico</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-textcustom font-heading">Nuestros Servicios</h2>
+                <p class="text-gray-400 font-sans">No solo grabamos, te acompañamos en todo el proceso de crecimiento digital.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -153,9 +155,9 @@
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('estudiopodcast.jpg');"></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
                     <div class="relative z-10">
-                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Infraestructura</span>
-                        <h3 class="text-2xl font-bold mb-2 text-textcustom">Estudio para Streaming y Podcast</h3>
-                        <p class="text-gray-300 text-sm">Alquiler de espacios full equipados con soporte técnico en vivo.</p>
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block font-heading">Infraestructura</span>
+                        <h3 class="text-2xl font-bold mb-2 text-textcustom font-heading">Estudio para Streaming y Podcast</h3>
+                        <p class="text-gray-300 text-sm font-sans">Alquiler de espacios full equipados con soporte técnico en vivo.</p>
                     </div>
                 </div>
 
@@ -164,9 +166,9 @@
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('edicion.jpg');"></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
                     <div class="relative z-10">
-                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Post-Producción</span>
-                        <h3 class="text-2xl font-bold mb-2 text-textcustom">Edición de Videos y Reels</h3>
-                        <p class="text-gray-300 text-sm">Cortes dinámicos optimizados para retener audiencia en TikTok, Instagram y Shorts.</p>
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block font-heading">Post-Producción</span>
+                        <h3 class="text-2xl font-bold mb-2 text-textcustom font-heading">Edición de Videos y Reels</h3>
+                        <p class="text-gray-300 text-sm font-sans">Cortes dinámicos optimizados para retener audiencia en TikTok, Instagram y Shorts.</p>
                     </div>
                 </div>
 
@@ -175,9 +177,9 @@
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('creacioncontenido.jpg');"></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
                     <div class="relative z-10">
-                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Asesoramiento</span>
-                        <h3 class="text-2xl font-bold mb-2 text-textcustom">Creación de Contenido para Redes</h3>
-                        <p class="text-gray-300 text-sm">Estrategias de contenido orientadas a posicionar tu marca personal o proyecto.</p>
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block font-heading">Asesoramiento</span>
+                        <h3 class="text-2xl font-bold mb-2 text-textcustom font-heading">Creación de Contenido para Redes</h3>
+                        <p class="text-gray-300 text-sm font-sans">Estrategias de contenido orientadas a posicionar tu marca personal o proyecto.</p>
                     </div>
                 </div>
 
@@ -186,9 +188,9 @@
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('calendario.jpg');"></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
                     <div class="relative z-10">
-                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Planificación</span>
-                        <h3 class="text-2xl font-bold mb-2 text-textcustom">Estrategias de Contenidos</h3>
-                        <p class="text-gray-300 text-sm">Planificación de temáticas, formatos y calendarios de publicación.</p>
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block font-heading">Planificación</span>
+                        <h3 class="text-2xl font-bold mb-2 text-textcustom font-heading">Estrategias de Contenidos</h3>
+                        <p class="text-gray-300 text-sm font-sans">Planificación de temáticas, formatos y calendarios de publicación.</p>
                     </div>
                 </div>
 
@@ -197,9 +199,9 @@
                     <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('metricas.jpg');"></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
                     <div class="relative z-10">
-                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Rendimiento</span>
-                        <h3 class="text-2xl font-bold mb-2 text-textcustom">Análisis de Métricas y Optimización</h3>
-                        <p class="text-gray-300 text-sm">Evaluación de rendimiento de tus publicaciones para ajustar el rumbo y potenciar el alcance orgánico.</p>
+                        <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block font-heading">Rendimiento</span>
+                        <h3 class="text-2xl font-bold mb-2 text-textcustom font-heading">Análisis de Métricas y Optimización</h3>
+                        <p class="text-gray-300 text-sm font-sans">Evaluación de rendimiento de tus publicaciones para ajustar el rumbo y potenciar el alcance orgánico.</p>
                     </div>
                 </div>
 
@@ -210,11 +212,11 @@
     <!-- SOBRE MÍ / DETRÁS DEL ESTUDIO -->
     <section id="sobre-mi" class="py-24 bg-[#161616] border-t border-gray-800/60">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-textcustom">Detrás de EdaEstudio</h2>
-            <p class="text-gray-300 text-lg leading-relaxed mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-textcustom font-heading">Detrás de EdaEstudio</h2>
+            <p class="text-gray-300 text-lg leading-relaxed mb-8 font-sans">
                 Hola, soy <span class="text-textcustom font-bold">Juani Roman</span>. Creé este espacio con el objetivo de brindar la infraestructura y el acompañamiento profesional que los creadores, marcas y podcasters necesitan para llevar su contenido al siguiente nivel sin complicaciones técnicas.
             </p>
-            <div class="inline-block border-t border-b border-accent/30 py-3 px-6 text-accent font-bold tracking-wider uppercase text-sm">
+            <div class="inline-block border-t border-b border-accent/30 py-3 px-6 text-accent font-bold tracking-wider uppercase text-sm font-heading">
                 Creá • Grabá • Crecé
             </div>
         </div>
@@ -223,13 +225,13 @@
     <!-- SECCIÓN CONTACTO INTERACTIVA (WHATSAPP CON SELECCIÓN) -->
     <section id="contacto" class="py-24 bg-cardbg border-t border-gray-800">
         <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-textcustom">Armá tu consulta</h2>
-            <p class="text-gray-400 mb-10">Seleccioná los espacios y servicios que te interesan para enviarnos un mensaje directo por WhatsApp con tu requerimiento.</p>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-textcustom font-heading">Armá tu consulta</h2>
+            <p class="text-gray-400 mb-10 font-sans">Seleccioná los espacios y servicios que te interesan para enviarnos un mensaje directo por WhatsApp con tu requerimiento.</p>
             
-            <div class="bg-darkbg border border-gray-800 rounded-3xl p-8 text-left mb-8 space-y-8">
+            <div class="bg-darkbg border border-gray-800 rounded-3xl p-8 text-left mb-8 space-y-8 font-sans">
                 <!-- Elección de Estudio -->
                 <div>
-                    <label class="block text-sm font-bold uppercase tracking-wider text-accent mb-3">1. ¿Qué estudio te interesa? (Opcional)</label>
+                    <label class="block text-sm font-bold uppercase tracking-wider text-accent mb-3 font-heading">1. ¿Qué estudio te interesa? (Opcional)</label>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                         <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
                             <input type="radio" name="estudio" value="Estudio 1" class="accent-rose-600 w-4 h-4">
@@ -248,7 +250,7 @@
 
                 <!-- Elección de Servicios (Múltiples) -->
                 <div>
-                    <label class="block text-sm font-bold uppercase tracking-wider text-accent mb-3">2. ¿Qué servicios te interesan? (Podés elegir varios)</label>
+                    <label class="block text-sm font-bold uppercase tracking-wider text-accent mb-3 font-heading">2. ¿Qué servicios te interesan? (Podés elegir varios)</label>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
                             <input type="checkbox" name="servicio" value="Estudio para Streaming y Podcast" class="accent-rose-600 w-4 h-4 rounded">
@@ -275,7 +277,7 @@
             </div>
 
             <!-- Botón de Envío Dinámico -->
-            <button onclick="enviarWhatsApp()" class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-bold px-10 py-4 rounded-xl transition flex items-center justify-center gap-3 mx-auto shadow-xl shadow-green-900/20 text-base">
+            <button onclick="enviarWhatsApp()" class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-semibold px-10 py-4 rounded-xl transition flex items-center justify-center gap-3 mx-auto shadow-xl shadow-green-900/20 text-base font-sans">
                 <i class="fa-brands fa-whatsapp text-2xl"></i> Enviar consulta por WhatsApp
             </button>
         </div>
@@ -291,7 +293,7 @@
             </div>
 
             <!-- Copyright y Redes -->
-            <div class="text-sm text-gray-500 border-t border-gray-800/80 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-sm text-gray-500 border-t border-gray-800/80 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 font-sans">
                 <p>&copy; 2026 EdaEstudio. Todos los derechos reservados.</p>
                 <div class="flex space-x-6 text-lg">
                     <a href="https://instagram.com/edaestudio_" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-instagram"></i></a>

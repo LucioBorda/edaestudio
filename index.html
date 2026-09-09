@@ -18,8 +18,9 @@
                         sans: ['Quicksand', 'sans-serif'],
                     },
                     colors: {
-                        darkbg: '#0a0a0a',
-                        cardbg: '#161616',
+                        darkbg: '#111b21', // Fondo personalizado tipo chat
+                        cardbg: '#1f2c34', // Fondo de tarjetas combinado
+                        textcustom: '#F3F3F1', // Blanco suave personalizado
                         accent: '#e11d48' // Rojo vibrante estilo streaming/podcast
                     }
                 }
@@ -28,12 +29,12 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-darkbg text-gray-100 font-sans antialiased selection:bg-accent selection:text-white">
+<body class="bg-darkbg text-textcustom font-sans antialiased selection:bg-accent selection:text-white">
 
     <!-- HEADER / NAVBAR -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-darkbg/85 backdrop-blur-md border-b border-gray-800">
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#111b21]/90 backdrop-blur-md border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="text-xl font-bold tracking-wider uppercase">
+            <a href="#" class="text-xl font-bold tracking-wider uppercase text-textcustom">
                 Eda<span class="text-accent">Estudio</span>
             </a>
             <nav class="hidden md:flex space-x-8 text-sm font-semibold text-gray-300">
@@ -51,13 +52,13 @@
     <section class="pt-32 pb-20 md:pt-44 md:py-32 relative overflow-hidden flex items-center justify-center">
         <!-- Imagen vertical de fondo con oscurecimiento para lectura perfecta -->
         <div class="absolute inset-0 z-0 bg-cover bg-center opacity-30" style="background-image: url('hero-estudios.jpg');"></div>
-        <div class="absolute inset-0 z-0 bg-gradient-to-b from-darkbg/90 via-darkbg/70 to-darkbg"></div>
+        <div class="absolute inset-0 z-0 bg-gradient-to-b from-darkbg/95 via-darkbg/75 to-darkbg"></div>
 
         <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
             <span class="inline-block bg-accent/20 text-accent border border-accent/30 text-xs font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full mb-6 backdrop-blur-sm">
                 Creá • Grabá • Crecé
             </span>
-            <h1 class="text-4xl md:text-7xl font-bold tracking-tight mb-6">
+            <h1 class="text-4xl md:text-7xl font-bold tracking-tight mb-6 text-textcustom">
                 Estudio Creativo <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-red-600">Audiovisual</span>
             </h1>
             <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
@@ -67,7 +68,7 @@
                 <a href="#estudios" class="bg-accent hover:bg-rose-700 text-white font-bold px-8 py-4 rounded-xl transition shadow-xl shadow-rose-900/20">
                     Conocé los Estudios
                 </a>
-                <a href="#servicios" class="bg-cardbg/80 backdrop-blur-sm hover:bg-zinc-800 border border-gray-700 font-bold px-8 py-4 rounded-xl transition">
+                <a href="#servicios" class="bg-cardbg/90 backdrop-blur-sm hover:bg-[#2a3942] border border-gray-700 font-bold px-8 py-4 rounded-xl transition text-textcustom">
                     Ver Servicios
                 </a>
             </div>
@@ -75,21 +76,21 @@
     </section>
 
     <!-- SECCIÓN ESTUDIOS -->
-    <section id="estudios" class="py-24 bg-zinc-950/50 border-t border-b border-gray-900">
+    <section id="estudios" class="py-24 bg-[#0c1317] border-t border-b border-gray-800/60">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestros Espacios</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-textcustom">Nuestros Espacios</h2>
                 <p class="text-gray-400">Dos estudios totalmente equipados, diseñados a medida para streaming, entrevistas y podcast de calidad profesional.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- ESTUDIO 1 -->
-                <div class="bg-cardbg border border-gray-800 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group hover:border-accent/50 transition">
+                <div class="bg-cardbg border border-gray-800/80 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group hover:border-accent/50 transition">
                     <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider">
                         Streaming y Entrevista
                     </div>
                     <div>
-                        <h3 class="text-2xl font-bold mb-6 text-white">Estudio 1</h3>
+                        <h3 class="text-2xl font-bold mb-6 text-textcustom">Estudio 1</h3>
                         <ul class="space-y-3.5 text-gray-300 text-sm md:text-base">
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Sillas ergonómicas x 4</li>
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Cámaras Logitech Brio 4K x 3</li>
@@ -109,12 +110,12 @@
                 </div>
 
                 <!-- ESTUDIO 2 -->
-                <div class="bg-cardbg border border-gray-800 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group hover:border-accent/50 transition">
+                <div class="bg-cardbg border border-gray-800/80 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group hover:border-accent/50 transition">
                     <div class="absolute top-0 right-0 bg-zinc-800 text-gray-200 text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider">
                         Podcast y Entrevista
                     </div>
                     <div>
-                        <h3 class="text-2xl font-bold mb-6 text-white">Estudio 2</h3>
+                        <h3 class="text-2xl font-bold mb-6 text-textcustom">Estudio 2</h3>
                         <ul class="space-y-3.5 text-gray-300 text-sm md:text-base">
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Sillones individuales x 2</li>
                             <li class="flex items-center gap-3"><i class="fa-solid fa-check text-accent"></i> Sillón de dos cuerpos</li>
@@ -141,7 +142,7 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-accent text-xs font-bold uppercase tracking-widest">Contenido Estratégico</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Nuestros Servicios</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4 text-textcustom">Nuestros Servicios</h2>
                 <p class="text-gray-400">No solo grabamos, te acompañamos en todo el proceso de crecimiento digital.</p>
             </div>
 
@@ -153,7 +154,7 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
                     <div class="relative z-10">
                         <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Infraestructura</span>
-                        <h3 class="text-2xl font-bold mb-2 text-white">Estudio para Streaming y Podcast</h3>
+                        <h3 class="text-2xl font-bold mb-2 text-textcustom">Estudio para Streaming y Podcast</h3>
                         <p class="text-gray-300 text-sm">Alquiler de espacios full equipados con soporte técnico en vivo.</p>
                     </div>
                 </div>
@@ -164,7 +165,7 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
                     <div class="relative z-10">
                         <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Post-Producción</span>
-                        <h3 class="text-2xl font-bold mb-2 text-white">Edición de Videos y Reels</h3>
+                        <h3 class="text-2xl font-bold mb-2 text-textcustom">Edición de Videos y Reels</h3>
                         <p class="text-gray-300 text-sm">Cortes dinámicos optimizados para retener audiencia en TikTok, Instagram y Shorts.</p>
                     </div>
                 </div>
@@ -175,7 +176,7 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
                     <div class="relative z-10">
                         <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Asesoramiento</span>
-                        <h3 class="text-2xl font-bold mb-2 text-white">Creación de Contenido para Redes</h3>
+                        <h3 class="text-2xl font-bold mb-2 text-textcustom">Creación de Contenido para Redes</h3>
                         <p class="text-gray-300 text-sm">Estrategias de contenido orientadas a posicionar tu marca personal o proyecto.</p>
                     </div>
                 </div>
@@ -186,7 +187,7 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
                     <div class="relative z-10">
                         <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Planificación</span>
-                        <h3 class="text-2xl font-bold mb-2 text-white">Estrategias de Contenidos</h3>
+                        <h3 class="text-2xl font-bold mb-2 text-textcustom">Estrategias de Contenidos</h3>
                         <p class="text-gray-300 text-sm">Planificación de temáticas, formatos y calendarios de publicación.</p>
                     </div>
                 </div>
@@ -197,7 +198,7 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-darkbg via-darkbg/80 to-transparent"></div>
                     <div class="relative z-10">
                         <span class="text-accent text-xs font-bold uppercase tracking-wider mb-2 block">Rendimiento</span>
-                        <h3 class="text-2xl font-bold mb-2 text-white">Análisis de Métricas y Optimización</h3>
+                        <h3 class="text-2xl font-bold mb-2 text-textcustom">Análisis de Métricas y Optimización</h3>
                         <p class="text-gray-300 text-sm">Evaluación de rendimiento de tus publicaciones para ajustar el rumbo y potenciar el alcance orgánico.</p>
                     </div>
                 </div>
@@ -207,11 +208,11 @@
     </section>
 
     <!-- SOBRE MÍ / DETRÁS DEL ESTUDIO -->
-    <section id="sobre-mi" class="py-24 bg-zinc-950/50 border-t border-gray-900">
+    <section id="sobre-mi" class="py-24 bg-[#0c1317] border-t border-gray-800/60">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Detrás de EdaEstudio</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-textcustom">Detrás de EdaEstudio</h2>
             <p class="text-gray-300 text-lg leading-relaxed mb-8">
-                Hola, soy <span class="text-white font-bold">Juan Antonio Román</span>. Creé este espacio con el objetivo de brindar la infraestructura y el acompañamiento profesional que los creadores, marcas y podcasters necesitan para llevar su contenido al siguiente nivel sin complicaciones técnicas.
+                Hola, soy <span class="text-textcustom font-bold">Juani Roman</span>. Creé este espacio con el objetivo de brindar la infraestructura y el acompañamiento profesional que los creadores, marcas y podcasters necesitan para llevar su contenido al siguiente nivel sin complicaciones técnicas.
             </p>
             <div class="inline-block border-t border-b border-accent/30 py-3 px-6 text-accent font-bold tracking-wider uppercase text-sm">
                 Creá • Grabá • Crecé
@@ -222,25 +223,25 @@
     <!-- SECCIÓN CONTACTO INTERACTIVA (WHATSAPP CON SELECCIÓN) -->
     <section id="contacto" class="py-24 bg-cardbg border-t border-gray-800">
         <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Armá tu consulta</h2>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-textcustom">Armá tu consulta</h2>
             <p class="text-gray-400 mb-10">Seleccioná los espacios y servicios que te interesan para enviarnos un mensaje directo por WhatsApp con tu requerimiento.</p>
             
-            <div class="bg-zinc-900/80 border border-gray-800 rounded-3xl p-8 text-left mb-8 space-y-8">
+            <div class="bg-[#111b21] border border-gray-800 rounded-3xl p-8 text-left mb-8 space-y-8">
                 <!-- Elección de Estudio -->
                 <div>
                     <label class="block text-sm font-bold uppercase tracking-wider text-accent mb-3">1. ¿Qué estudio te interesa? (Opcional)</label>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                         <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
                             <input type="radio" name="estudio" value="Estudio 1" class="accent-rose-600 w-4 h-4">
-                            <span class="text-sm font-semibold">Estudio 1</span>
+                            <span class="text-sm font-semibold text-textcustom">Estudio 1</span>
                         </label>
                         <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
                             <input type="radio" name="estudio" value="Estudio 2" class="accent-rose-600 w-4 h-4">
-                            <span class="text-sm font-semibold">Estudio 2</span>
+                            <span class="text-sm font-semibold text-textcustom">Estudio 2</span>
                         </label>
                         <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
                             <input type="radio" name="estudio" value="Ambos / Indeciso" class="accent-rose-600 w-4 h-4">
-                            <span class="text-sm font-semibold">Me interesan ambos</span>
+                            <span class="text-sm font-semibold text-textcustom">Me interesan ambos</span>
                         </label>
                     </div>
                 </div>
@@ -251,23 +252,23 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
                             <input type="checkbox" name="servicio" value="Estudio para Streaming y Podcast" class="accent-rose-600 w-4 h-4 rounded">
-                            <span class="text-sm font-semibold">Streaming y Podcast</span>
+                            <span class="text-sm font-semibold text-textcustom">Streaming y Podcast</span>
                         </label>
                         <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
                             <input type="checkbox" name="servicio" value="Edición de Videos y Reels" class="accent-rose-600 w-4 h-4 rounded">
-                            <span class="text-sm font-semibold">Edición de Videos y Reels</span>
+                            <span class="text-sm font-semibold text-textcustom">Edición de Videos y Reels</span>
                         </label>
                         <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
                             <input type="checkbox" name="servicio" value="Creación de Contenido para Redes" class="accent-rose-600 w-4 h-4 rounded">
-                            <span class="text-sm font-semibold">Creación de Contenido</span>
+                            <span class="text-sm font-semibold text-textcustom">Creación de Contenido</span>
                         </label>
                         <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none">
                             <input type="checkbox" name="servicio" value="Estrategias de Contenidos" class="accent-rose-600 w-4 h-4 rounded">
-                            <span class="text-sm font-semibold">Estrategias de Contenidos</span>
+                            <span class="text-sm font-semibold text-textcustom">Estrategias de Contenidos</span>
                         </label>
                         <label class="flex items-center gap-3 p-3.5 rounded-xl border border-gray-800 bg-cardbg cursor-pointer hover:border-accent transition select-none sm:col-span-2">
                             <input type="checkbox" name="servicio" value="Análisis de Métricas y Optimización" class="accent-rose-600 w-4 h-4 rounded">
-                            <span class="text-sm font-semibold">Análisis de Métricas y Optimización</span>
+                            <span class="text-sm font-semibold text-textcustom">Análisis de Métricas y Optimización</span>
                         </label>
                     </div>
                 </div>
@@ -313,7 +314,7 @@
             let textoServicios = listaServicios.length > 0 ? listaServicios.join("\n") : "• Ninguno en particular por ahora";
 
             // Armar mensaje predeterminado
-            let mensaje = `¡Hola Juan! 👋 Vi la página de EdaEstudio y me gustaría consultarles lo siguiente:\n\n` +
+            let mensaje = `¡Hola Juani! 👋 Vi la página de EdaEstudio y me gustaría consultarles lo siguiente:\n\n` +
                           `🏢 *Espacio de interés:* ${textoEstudio}\n\n` +
                           `⚙️ *Servicios de interés:*\n${textoServicios}\n\n` +
                           `¿Me pasarían más información y disponibilidad? ¡Gracias!`;

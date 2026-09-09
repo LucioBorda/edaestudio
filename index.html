@@ -18,8 +18,8 @@
                         sans: ['Quicksand', 'sans-serif'],
                     },
                     colors: {
-                        darkbg: '#111b21', // Fondo personalizado tipo chat
-                        cardbg: '#1f2c34', // Fondo de tarjetas combinado
+                        darkbg: '#1c1c1c', // Gris oscuro neutro exacto al de tu imagen
+                        cardbg: '#252525', // Gris un poco más claro para contraste en tarjetas
                         textcustom: '#F3F3F1', // Blanco suave personalizado
                         accent: '#e11d48' // Rojo vibrante estilo streaming/podcast
                     }
@@ -32,7 +32,7 @@
 <body class="bg-darkbg text-textcustom font-sans antialiased selection:bg-accent selection:text-white">
 
     <!-- HEADER / NAVBAR -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-[#111b21]/90 backdrop-blur-md border-b border-gray-800">
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#1c1c1c]/90 backdrop-blur-md border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="text-xl font-bold tracking-wider uppercase text-textcustom">
                 Eda<span class="text-accent">Estudio</span>
@@ -68,7 +68,7 @@
                 <a href="#estudios" class="bg-accent hover:bg-rose-700 text-white font-bold px-8 py-4 rounded-xl transition shadow-xl shadow-rose-900/20">
                     Conocé los Estudios
                 </a>
-                <a href="#servicios" class="bg-cardbg/90 backdrop-blur-sm hover:bg-[#2a3942] border border-gray-700 font-bold px-8 py-4 rounded-xl transition text-textcustom">
+                <a href="#servicios" class="bg-cardbg/90 backdrop-blur-sm hover:bg-[#303030] border border-gray-700 font-bold px-8 py-4 rounded-xl transition text-textcustom">
                     Ver Servicios
                 </a>
             </div>
@@ -76,7 +76,7 @@
     </section>
 
     <!-- SECCIÓN ESTUDIOS -->
-    <section id="estudios" class="py-24 bg-[#0c1317] border-t border-b border-gray-800/60">
+    <section id="estudios" class="py-24 bg-[#161616] border-t border-b border-gray-800/60">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 text-textcustom">Nuestros Espacios</h2>
@@ -111,7 +111,7 @@
 
                 <!-- ESTUDIO 2 -->
                 <div class="bg-cardbg border border-gray-800/80 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden group hover:border-accent/50 transition">
-                    <div class="absolute top-0 right-0 bg-zinc-800 text-gray-200 text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider">
+                    <div class="absolute top-0 right-0 bg-zinc-700 text-gray-200 text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider">
                         Podcast y Entrevista
                     </div>
                     <div>
@@ -208,7 +208,7 @@
     </section>
 
     <!-- SOBRE MÍ / DETRÁS DEL ESTUDIO -->
-    <section id="sobre-mi" class="py-24 bg-[#0c1317] border-t border-gray-800/60">
+    <section id="sobre-mi" class="py-24 bg-[#161616] border-t border-gray-800/60">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6 text-textcustom">Detrás de EdaEstudio</h2>
             <p class="text-gray-300 text-lg leading-relaxed mb-8">
@@ -226,7 +226,7 @@
             <h2 class="text-3xl md:text-4xl font-bold mb-4 text-textcustom">Armá tu consulta</h2>
             <p class="text-gray-400 mb-10">Seleccioná los espacios y servicios que te interesan para enviarnos un mensaje directo por WhatsApp con tu requerimiento.</p>
             
-            <div class="bg-[#111b21] border border-gray-800 rounded-3xl p-8 text-left mb-8 space-y-8">
+            <div class="bg-darkbg border border-gray-800 rounded-3xl p-8 text-left mb-8 space-y-8">
                 <!-- Elección de Estudio -->
                 <div>
                     <label class="block text-sm font-bold uppercase tracking-wider text-accent mb-3">1. ¿Qué estudio te interesa? (Opcional)</label>
@@ -281,10 +281,17 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-darkbg border-t border-gray-900 py-12">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <div class="text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4">
+    <!-- FOOTER CON ILUSTRACIÓN DEL ESCRITORIO -->
+    <footer class="bg-darkbg border-t border-gray-900 pt-16 pb-12 overflow-hidden">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            
+            <!-- Ilustración del escritorio integrada -->
+            <div class="mb-10 opacity-75 hover:opacity-100 transition duration-300">
+                <img src="escritorio-vector.png" alt="Esquema del estudio EdaEstudio" class="max-w-xs md:max-w-md mx-auto object-contain filter drop-shadow-[0_10px_20px_rgba(225,29,72,0.15)]">
+            </div>
+
+            <!-- Copyright y Redes -->
+            <div class="text-sm text-gray-500 border-t border-gray-800/80 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p>&copy; 2026 EdaEstudio. Todos los derechos reservados.</p>
                 <div class="flex space-x-6 text-lg">
                     <a href="https://instagram.com/edaestudio_" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-instagram"></i></a>

@@ -33,26 +33,26 @@
 </head>
 <body class="bg-darkbg text-textcustom font-sans antialiased selection:bg-accent selection:text-white">
 
-<!-- HEADER / NAVBAR -->
+    <!-- HEADER / NAVBAR -->
     <header class="fixed top-0 left-0 w-full z-50 bg-[#1c1c1c]/90 backdrop-blur-md border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Logo SVG exportado desde Figma (guardalo como logo.svg en tu carpeta) -->
-            <a href="#" class="flex items-center">
-                <img src="logo.svg" alt="edaestudio" class="h-7 w-auto">
+            <a href="#" class="font-logo text-2xl font-bold tracking-wider text-white lowercase">
+                edaestudio
             </a>
-
-            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-300 font-sans">
+            <!-- Menú centrado -->
+            <nav class="hidden md:flex items-center space-x-10 text-sm font-medium text-gray-300 font-sans">
                 <a href="#estudios" class="hover:text-accent transition">Estudios</a>
                 <a href="#servicios" class="hover:text-accent transition">Servicios</a>
                 <a href="#sobre-mi" class="hover:text-accent transition">Sobre Mí</a>
             </nav>
-            <a href="#contacto" class="bg-accent hover:bg-rose-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition shadow-lg shadow-rose-900/30 font-sans">
-                Reservar / Contacto
+            <!-- Botón de contacto simplificado -->
+            <a href="#contacto" class="bg-accent hover:bg-rose-700 text-white text-sm font-semibold px-6 py-2.5 rounded-full transition shadow-lg shadow-rose-900/30 font-sans">
+                Contacto
             </a>
         </div>
     </header>
 
-<!-- HERO SECTION -->
+    <!-- HERO SECTION -->
     <section class="pt-32 pb-20 md:pt-44 md:py-32 relative overflow-hidden flex flex-col items-center justify-center">
         <!-- Imagen vertical de fondo con oscurecimiento -->
         <div class="absolute inset-0 z-0 bg-cover bg-center opacity-30" style="background-image: url('hero-estudios.jpg');"></div>
@@ -70,24 +70,24 @@
             </p>
         </div>
 
-        <!-- Ilustración del escritorio integrada sin cortes bruscos -->
+        <!-- Ilustración del escritorio -->
         <div class="w-full max-w-3xl px-6 relative z-10 mb-8">
             <div class="transition duration-300">
-                <img src="escritorio-vector-eda-svg.svg" alt="Esquema del estudio edaestudio" class="w-full max-w-sm md:max-w-md mx-auto object-contain pointer-events-none select-none mix-blend-screen">
+                <img src="escritorio-vector-eda.svg" alt="Esquema del estudio edaestudio" class="w-full max-w-sm md:max-w-md mx-auto object-contain pointer-events-none select-none mix-blend-screen">
             </div>
         </div>
 
-        <!-- Botones de llamada a la acción -->
-        <div class="w-full max-w-md mx-auto px-6 flex flex-col sm:flex-row justify-center items-center gap-4 relative z-10">
-            <a href="#estudios" class="w-full sm:w-auto text-center bg-accent hover:bg-rose-700 text-white font-semibold px-8 py-4 rounded-xl transition shadow-xl shadow-rose-900/25 font-sans">
+        <!-- Botones de llamada a la acción con tamaños idénticos -->
+        <div class="w-full max-w-lg mx-auto px-6 flex flex-col sm:flex-row justify-center items-center gap-4 relative z-10">
+            <a href="#estudios" class="w-full sm:w-56 text-center bg-accent hover:bg-rose-700 text-white font-semibold py-4 rounded-xl transition shadow-xl shadow-rose-900/25 font-sans">
                 Conocé los Estudios
             </a>
-            <a href="#servicios" class="w-full sm:w-auto text-center bg-cardbg/90 backdrop-blur-sm hover:bg-[#303030] border border-gray-700 font-semibold px-8 py-4 rounded-xl transition text-textcustom font-sans">
+            <a href="#servicios" class="w-full sm:w-56 text-center bg-cardbg/90 backdrop-blur-sm hover:bg-[#303030] border border-gray-700 font-semibold py-4 rounded-xl transition text-textcustom font-sans">
                 Ver Servicios
             </a>
         </div>
     </section>
-    
+
     <!-- SECCIÓN ESTUDIOS -->
     <section id="estudios" class="py-24 bg-[#161616] border-t border-b border-gray-800/60">
         <div class="max-w-7xl mx-auto px-6">
@@ -243,14 +243,14 @@
         </div>
     </section>
 
-    <!-- SECCIÓN CONTACTO INTERACTIVA (WHATSAPP CON SELECCIÓN MÚLTIPLE LIBRE) -->
+    <!-- SECCIÓN CONTACTO INTERACTIVA -->
     <section id="contacto" class="py-24 bg-cardbg border-t border-gray-800">
         <div class="max-w-3xl mx-auto px-6 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-4 text-textcustom font-heading">Armá tu consulta</h2>
             <p class="text-gray-400 mb-10 font-sans">Seleccioná los espacios y/o los servicios que te interesan para enviarnos un mensaje directo por WhatsApp.</p>
             
             <div class="bg-darkbg border border-gray-800 rounded-3xl p-8 text-left mb-8 space-y-8 font-sans">
-                <!-- 1. Selección de Espacios (Checkboxes múltiples) -->
+                <!-- 1. Selección de Espacios -->
                 <div>
                     <label class="block text-sm font-bold uppercase tracking-wider text-accent mb-3 font-heading">1. ¿Qué espacio(s) te interesa alquilar?</label>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -284,16 +284,15 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
+<!-- FOOTER -->
     <footer class="bg-darkbg border-t border-gray-900 py-12">
         <div class="max-w-5xl mx-auto px-6 text-center">
             <!-- Copyright y Redes -->
             <div class="text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4 font-sans">
                 <p>&copy; 2026 edaestudio. Todos los derechos reservados.</p>
                 <div class="flex space-x-6 text-lg">
+                    <!-- Únicamente Instagram -->
                     <a href="https://instagram.com/edaestudio_" target="_blank" class="hover:text-accent transition"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="hover:text-accent transition"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="#" class="hover:text-accent transition"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
         </div>

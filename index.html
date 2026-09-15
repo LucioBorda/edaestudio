@@ -36,19 +36,21 @@
 
 <!-- HEADER / NAVBAR -->
     <header class="fixed top-0 left-0 w-full z-50 bg-[#1c1c1c]/90 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Logo reemplazado -->
-            <a href="#" class="flex items-center">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between relative">
+            <!-- Logo -->
+            <a href="#" class="flex items-center z-10">
                 <img src="logo.svg" alt="edaestudio logo" class="h-8 w-auto object-contain">
             </a>
-            <!-- Menú centrado -->
-            <nav class="hidden md:flex items-center space-x-10 text-sm font-medium text-gray-300 font-sans">
+
+            <!-- Menú centrado absolutamente -->
+            <nav class="hidden md:flex items-center space-x-10 text-sm font-medium text-gray-300 font-sans absolute left-1/2 -translate-x-1/2">
                 <a href="#estudios" class="hover:text-accent transition">Estudios</a>
                 <a href="#servicios" class="hover:text-accent transition">Servicios</a>
                 <a href="#sobre-mi" class="hover:text-accent transition">Sobre Mí</a>
             </nav>
-            <!-- Botón de contacto simplificado -->
-            <a href="#contacto" class="bg-accent hover:bg-rose-700 text-white text-sm font-semibold px-6 py-2.5 rounded-full transition shadow-lg shadow-rose-900/30 font-sans">
+
+            <!-- Botón de contacto -->
+            <a href="#contacto" class="bg-accent hover:bg-rose-700 text-white text-sm font-semibold px-6 py-2.5 rounded-full transition shadow-lg shadow-rose-900/30 font-sans z-10">
                 Contacto
             </a>
         </div>
